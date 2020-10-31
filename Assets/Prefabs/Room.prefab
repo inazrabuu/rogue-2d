@@ -15,7 +15,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &355307764492391935
 Transform:
   m_ObjectHideFlags: 0
@@ -1468,12 +1468,12 @@ GameObject:
   m_Component:
   - component: {fileID: 355307765061553238}
   m_Layer: 0
-  m_Name: EastDoor
+  m_Name: WestDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &355307765061553238
 Transform:
   m_ObjectHideFlags: 0
@@ -2597,7 +2597,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &355307765395251613
 Transform:
   m_ObjectHideFlags: 0
@@ -2995,6 +2995,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f74c5f79e4c2c4d89a9c2ae644710ac6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  northDoor: {fileID: 355307764492391935}
+  westDoor: {fileID: 355307765061553238}
+  southDoor: {fileID: 355307765395251613}
+  eastDoor: {fileID: 355307766193110287}
+  northWall: {fileID: 355307764606064938}
+  westWall: {fileID: 355307766027252313}
+  southWall: {fileID: 355307764857608907}
+  eastWall: {fileID: 355307766387639814}
+  insideWidth: 7
+  insideHeight: 7
+  enemyPrefab: {fileID: 0}
+  coinPrefab: {fileID: 0}
+  healthPrefab: {fileID: 0}
+  keyPrefab: {fileID: 0}
+  exitDoorPrefab: {fileID: 0}
 --- !u!1 &355307765506860629
 GameObject:
   m_ObjectHideFlags: 0
@@ -4564,12 +4579,12 @@ GameObject:
   m_Component:
   - component: {fileID: 355307766193110287}
   m_Layer: 0
-  m_Name: WestDoor
+  m_Name: EastDoor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &355307766193110287
 Transform:
   m_ObjectHideFlags: 0
