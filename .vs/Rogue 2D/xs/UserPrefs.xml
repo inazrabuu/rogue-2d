@@ -1,8 +1,9 @@
 ﻿<Properties StartupConfiguration="{87A6AC08-F0E6-B009-8868-D4EE565F27EA}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Room.cs">
+  <MonoDevelop.Ide.Workbench>
     <Files>
       <File FileName="Assets/Scripts/Player.cs" Line="54" Column="1" />
-      <File FileName="Assets/Scripts/Room.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Room.cs" Line="39" Column="1" />
+      <File FileName="Assets/Scripts/Generation.cs" Line="42" Column="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -10,7 +11,7 @@
           <Node name="Rogue 2D" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Room.cs" selected="True" />
+                <Node name="Generation.cs" selected="True" />
               </Node>
             </Node>
           </Node>
