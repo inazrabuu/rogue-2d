@@ -3011,8 +3011,10 @@ MonoBehaviour:
     type: 3}
   healthPrefab: {fileID: 4072474876945448684, guid: b3b81170c4a6a4aeeb16020a495abf84,
     type: 3}
-  keyPrefab: {fileID: 0}
-  exitDoorPrefab: {fileID: 0}
+  keyPrefab: {fileID: 4346823954465493184, guid: cc1affbbf1b3442edae3b6333e893034,
+    type: 3}
+  exitDoorPrefab: {fileID: 4728646413941415782, guid: 43925d62c164d41ccb93f557f11f4002,
+    type: 3}
 --- !u!1 &355307765506860629
 GameObject:
   m_ObjectHideFlags: 0

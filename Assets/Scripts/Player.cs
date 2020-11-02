@@ -131,4 +131,9 @@ public class Player : MonoBehaviour
 
         return false;
     }
+
+    public void ToggleKey(bool state)
+    {
+        hasKey = state;
+    }
 }

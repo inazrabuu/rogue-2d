@@ -32,7 +32,7 @@ public class Generation : MonoBehaviour
 
     private void Start()
     {
-        Random.InitState(123);
+        Random.InitState(82735499);
         Generate();
     }
 
@@ -161,6 +161,25 @@ public class Generation : MonoBehaviour
 
     void CalculateKeyAndExit()
     {
+        float maxDistance = 0;
+        Room a = null;
+        Room b = null;
 
+        foreach (Room aRoom in _roomObjects)
+        {
+            foreach (Room bRoom in _roomObjects)
+            {
+                float distance = Vector3.Distance(aRoom.transform.position, bRoom.transform.position);
+                if (distance > maxDistance)
+                {
+                    a = aRoom;
+                    b = bRoom;
+                    maxDistance = distance;
+                }
+            }
+        }
+
+        a.SpawnPrefab(a.keyPrefab);
+        b.SpawnPrefab(b.exitDoorPrefab);
     }
 }
