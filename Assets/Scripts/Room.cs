@@ -31,11 +31,47 @@ public class Room : MonoBehaviour
 
     public void GenerateInterior()
     {
+        if (Random.value < Generation.Instance.enemySpawnChances)
+        {
+            SpawnPrefab(enemyPrefab, 1, Generation.Instance.maxEnemiesPerRoom + 1);
+        }
 
+        if (Random.value < Generation.Instance.coinSpawnChances)
+        {
+            SpawnPrefab(coinPrefab, 1, Generation.Instance.maxCoinPerRoom + 1);
+        }
+
+        if (Random.value < Generation.Instance.healthSpawnChances)
+        {
+            SpawnPrefab(healthPrefab, 1, Generation.Instance.maxHealthPerRoom + 1);
+        }
     }
 
     public void SpawnPrefab(GameObject prefab, int min = 0, int max = 0)
     {
+        int num = 1;
+        if (min > 0 || max > 0)
+        {
+            num = Random.Range(min, max);
+        }
 
+        for (int x = 0; x < num; x++)
+        {
+            GameObject obj = Instantiate(prefab);
+            Vector3 pos = transform.position + new Vector3(Random.Range(-insideWidth / 2, insideWidth / 2 + 1), Random.Range(-insideHeight / 2, insideHeight / 2 + 1), 0);
+
+            while (_usedPositions.Contains(pos))
+            {
+                pos = transform.position + new Vector3(Random.Range(-insideWidth / 2, insideWidth / 2 + 1), Random.Range(-insideHeight / 2, insideHeight / 2 + 1), 0);
+            }
+
+            obj.transform.position = pos;
+            _usedPositions.Add(pos);
+
+            if (prefab == enemyPrefab)
+            {
+                EnemyManager.Instance.enemies.Add(obj.GetComponent<Enemy>());
+            }
+        }
     }
 }

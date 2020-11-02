@@ -17,6 +17,14 @@ public class Generation : MonoBehaviour
 
     public static Generation Instance;
 
+    public float enemySpawnChances;
+    public float coinSpawnChances;
+    public float healthSpawnChances;
+
+    public int maxEnemiesPerRoom;
+    public int maxCoinPerRoom;
+    public int maxHealthPerRoom;
+
     private void Awake()
     {
         Instance = this;

@@ -3005,9 +3005,12 @@ MonoBehaviour:
   eastWall: {fileID: 355307766387639814}
   insideWidth: 7
   insideHeight: 7
-  enemyPrefab: {fileID: 0}
-  coinPrefab: {fileID: 0}
-  healthPrefab: {fileID: 0}
+  enemyPrefab: {fileID: 8743158534819692232, guid: afe2beac238294dbfa3323f250be7054,
+    type: 3}
+  coinPrefab: {fileID: 7463058676513876011, guid: 8fbf032b009704170bbdeabfadae12b8,
+    type: 3}
+  healthPrefab: {fileID: 4072474876945448684, guid: b3b81170c4a6a4aeeb16020a495abf84,
+    type: 3}
   keyPrefab: {fileID: 0}
   exitDoorPrefab: {fileID: 0}
 --- !u!1 &355307765506860629

@@ -75,6 +75,7 @@ public class Enemy : MonoBehaviour
         }
 
         transform.position += direction;
+        Debug.Log(transform.position);
     }
 
     Vector3 GetRandomDirection()
