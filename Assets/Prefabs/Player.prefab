@@ -47,8 +47,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71dae0ee2427b427394b09d22233c37f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  curHp: 10
-  maxHp: 10
+  curHp: 7
+  maxHp: 7
   coins: 0
   hasKey: 0
   spriteRenderer: {fileID: 6661484481995090320}

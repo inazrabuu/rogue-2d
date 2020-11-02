@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 2221454422260840019, guid: aa538db6ee8794058a84fabf55f75a78, type: 3}
-  health: 6
+  health: 3
   damage: 1
   attackChance: 0.5
   deathDropPrefab: {fileID: 0}
