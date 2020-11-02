@@ -8,6 +8,7 @@ public class Enemy : MonoBehaviour
 
     public int health;
     public int damage;
+    public float attackChance = .5f;
 
     public GameObject deathDropPrefab;
     public SpriteRenderer spriteRenderer;
@@ -17,6 +18,38 @@ public class Enemy : MonoBehaviour
     private void Start()
     {
         player = FindObjectOfType<Player>();
+    }
+
+    public void TakeDamage(int damageToTake)
+    {
+        health -= damageToTake;
+
+        if (health <= 0)
+        {
+            if (deathDropPrefab != null)
+            {
+                Instantiate(deathDropPrefab, transform.position, Quaternion.identity);
+            }
+
+            Destroy(this.gameObject);
+        }
+
+        StartCoroutine(DamageFlash());
+
+        if (Random.value > attackChance)
+        {
+            player.TakeDamage(damage);
+        }
+    }
+
+    IEnumerator DamageFlash()
+    {
+        Color defaultColor = spriteRenderer.color;
+        spriteRenderer.color = Color.white;
+
+        yield return new WaitForSeconds(.05f);
+
+        spriteRenderer.color = defaultColor;
     }
 
     public void Move()

@@ -1,10 +1,12 @@
 ﻿<Properties StartupConfiguration="{87A6AC08-F0E6-B009-8868-D4EE565F27EA}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Enemy.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Pickup.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player.cs" Line="54" Column="1" />
+      <File FileName="Assets/Scripts/Player.cs" Line="21" Column="50" />
       <File FileName="Assets/Scripts/Room.cs" Line="39" Column="1" />
       <File FileName="Assets/Scripts/Generation.cs" Line="41" Column="26" />
-      <File FileName="Assets/Scripts/Enemy.cs" Line="7" Column="8" />
+      <File FileName="Assets/Scripts/Enemy.cs" Line="40" Column="10" />
+      <File FileName="Assets/Scripts/EnemyManager.cs" Line="29" Column="30" />
+      <File FileName="Assets/Scripts/Pickup.cs" Line="5" Column="21" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -12,7 +14,7 @@
           <Node name="Rogue 2D" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="Enemy.cs" selected="True" />
+                <Node name="Pickup.cs" selected="True" />
               </Node>
             </Node>
           </Node>
