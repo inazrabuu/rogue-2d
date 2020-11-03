@@ -19,6 +19,7 @@ public class Player : MonoBehaviour
         {
             transform.position += new Vector3(direction.x, direction.y, 0);
             EnemyManager.Instance.OnPlayerMove();
+            Generation.Instance.OnPlayerMove();
         }
     }
 
@@ -99,6 +100,8 @@ public class Player : MonoBehaviour
     {
         curHp -= damage;
 
+        UIManager.Instance.UpdateHealth(curHp);
+
         if (curHp <= 0)
         {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
@@ -119,6 +122,7 @@ public class Player : MonoBehaviour
     public void AddCoin(int amount)
     {
         coins += amount;
+        UIManager.Instance.UpdateCoinText(coins);
     }
 
     public bool AddHealth(int amount)
@@ -126,6 +130,7 @@ public class Player : MonoBehaviour
         if (curHp + amount <= maxHp)
         {
             curHp += amount;
+            UIManager.Instance.UpdateHealth(curHp);
             return true;
         }
 
@@ -135,5 +140,6 @@ public class Player : MonoBehaviour
     public void ToggleKey(bool state)
     {
         hasKey = state;
+        UIManager.Instance.ToggleKeyIcon(state);
     }
 }

@@ -42,6 +42,16 @@ public class Generation : MonoBehaviour
         CheckRoom(3, 3, 0, Vector2.zero, true);
         InstantiateRooms();
         FindObjectOfType<Player>().transform.position = _firstRoomPos * 12;
+
+        UIManager.Instance.map.texture = MapTextureGenerator.Generate(_map, _firstRoomPos);
+    }
+
+    public void OnPlayerMove()
+    {
+        Vector2 playerPos = FindObjectOfType<Player>().transform.position;
+        Vector2 roomPos = new Vector2(((int)playerPos.x + 6) / 12, ((int)playerPos.y + 6) / 12);
+
+        UIManager.Instance.map.texture = MapTextureGenerator.Generate(_map, roomPos);
     }
 
     void CheckRoom(int x, int y, int remaining, Vector2 generalDirection, bool firstRoom = false)
