@@ -30,13 +30,6 @@ public class Generation : MonoBehaviour
         Instance = this;
     }
 
-    private void Start()
-    {
-        int seed = PlayerPrefs.GetInt("Seed");
-        Random.InitState(seed);
-        Generate();
-    }
-
     public void Generate()
     {
         _map = new bool[mapHeight, mapWidth];

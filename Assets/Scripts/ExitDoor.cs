@@ -11,7 +11,7 @@ public class ExitDoor : MonoBehaviour
             Player player = other.GetComponent<Player>();
             if (player.hasKey)
             {
-                Debug.Log("Open the door");
+                GameManager.Instance.GoToNextLevel();
             }
         }
     }
