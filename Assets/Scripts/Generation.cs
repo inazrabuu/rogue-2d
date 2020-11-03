@@ -32,7 +32,8 @@ public class Generation : MonoBehaviour
 
     private void Start()
     {
-        Random.InitState(82735499);
+        int seed = PlayerPrefs.GetInt("Seed");
+        Random.InitState(seed);
         Generate();
     }
 

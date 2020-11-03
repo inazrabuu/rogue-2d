@@ -1,16 +1,17 @@
 ﻿<Properties StartupConfiguration="{87A6AC08-F0E6-B009-8868-D4EE565F27EA}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MapTextureGenerator.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Menu.cs">
     <Files>
-      <File FileName="Assets/Scripts/Player.cs" Line="132" Column="52" />
+      <File FileName="Assets/Scripts/Player.cs" Line="22" Column="48" />
       <File FileName="Assets/Scripts/Room.cs" />
-      <File FileName="Assets/Scripts/Generation.cs" />
+      <File FileName="Assets/Scripts/Generation.cs" Line="54" Column="86" />
       <File FileName="Assets/Scripts/Enemy.cs" />
       <File FileName="Assets/Scripts/EnemyManager.cs" />
       <File FileName="Assets/Scripts/Pickup.cs" />
       <File FileName="Assets/Scripts/Key.cs" />
       <File FileName="Assets/Scripts/ExitDoor.cs" />
       <File FileName="Assets/Scripts/UIManager.cs" Line="36" Column="20" />
-      <File FileName="Assets/Scripts/MapTextureGenerator.cs" Line="7" Column="21" />
+      <File FileName="Assets/Scripts/MapTextureGenerator.cs" Line="28" Column="31" />
+      <File FileName="Assets/Scripts/Menu.cs" Line="4" Column="22" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -18,7 +19,7 @@
           <Node name="Rogue 2D" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="MapTextureGenerator.cs" selected="True" />
+                <Node name="Menu.cs" selected="True" />
               </Node>
             </Node>
           </Node>
